@@ -1,0 +1,43 @@
+---
+---
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>{{ site.title }}</title>
+	<meta name="description" content="{{ site.description }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" />
+
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="header">
+	<div class="container d-flex">
+		<a href="." class="logo">
+			<img src="assets/images/logo.svg" alt="" class="logo-image"/>
+			{{ site.title }}
+		</a>
+		<div class="menu ml-auto">
+			<a href="./help.html"><i class="fa fa-book"></i> Getting started</a>
+			<a href="{{ site.github_url }}"><i class="fa fa-github"></i> GitHub</a>
+		</div>
+	</div>
+</header>
+
+{{ content }}
+
+<footer class="footer">
+	<div class="container d-flex">
+		<div>Project maintained by <a href="https://codecalm.net">codecalm.net</a></div>
+		<div class="ml-auto">
+			<a href="./demo/" class="text-muted">Demo</a>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

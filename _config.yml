@@ -1,1 +1,18 @@
+title: tabler
+description: Description
 
+port: 4001
+
+highlighter: rouge
+
+exclude:
+- gulpfile.js
+- package-lock.json
+- package.json
+- node_modules
+- .idea/
+
+
+
+github_url: https://github.com/tabler/tabler/releases
+demo_url: https://tabler.github.io/tabler/

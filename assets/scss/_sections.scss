@@ -1,0 +1,19 @@
+.section {
+	padding: 3rem 0;
+}
+
+.section-dark {
+	background: $background-gray;
+}
+
+.section-title {
+	text-align: center;
+	margin: 0 0 2rem;
+}
+
+.section-description {
+	text-align: center;
+	color: $color-muted;
+	margin: -1.5rem auto 3rem;
+	max-width: 40rem;
+}

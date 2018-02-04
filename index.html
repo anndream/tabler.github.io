@@ -1,4 +1,133 @@
 ---
+layout: default
 ---
 
-# homepage
+<section class="welcome">
+	<div class="container">
+		<h1 class="welcome-title">Tabler</h1>
+		<p class="welcome-description">Premium dashboard template with responsive and high quality UI. For Free!</p>
+
+		<div class="mt-6">
+			<a href="{{ site.github_url }}" class="btn">Download</a>
+			<a href="./demo" class="btn btn-outline ml-2" target="_blank">See demo</a>
+		</div>
+
+		<div class="welcome-browser browser">
+			<div class="browser-topbar">
+				<span></span><span></span><span></span>
+			</div>
+			<img src="assets/images/dashboard.png" alt="" class="browser-image">
+		</div>
+	</div>
+</section>
+
+
+
+<section class="section">
+	<div class="container">
+		<h2 class="section-title">Features</h2>
+		<p class="section-description">
+			Tabler comes with tons of well-designed components and features.
+		</p>
+
+
+		<div class="row">
+			<div class="col-sm-6 col-lg-4">
+				<h3>Responsive</h3>
+				<p>Your website works on any device: desktop, tablet or mobile.</p>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<h3>Customizable</h3>
+				<p>You can easily read, edit, and write your own code, or change everything.</p>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<h3>Cross Browser Support</h3>
+				<p>Compatible with all modern browsers.</p>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<h3>Beautiful</h3>
+				<p>You can find our code well organized, commented and readable.</p>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<h3>Documented</h3>
+				<p>As you can see in the source code, we provided a comprehensive documentation.</p>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<h3>Clean Design</h3>
+				<p>Simple and clean design for better user experience.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% comment %}
+<section class="section section-dark">
+	<div class="container">
+		<h2 class="section-title">Frequently Asked Questions</h2>
+		<p class="section-description">
+			Got a question? We've got answers. If you have some other questions, see our support center.
+		</p>
+
+		<div class="row">
+			<div class="col-lg-6">
+				<h4>What payment services do you support?</h4>
+				<p>We accept all major credit cards.</p>
+			</div>
+			<div class="col-lg-6">
+				<h4>Can I cancel my subscription?</h4>
+				<p>You can cancel your subscription at any time. Cancelling your plan comes into effect the following month.</p>
+			</div>
+			<div class="col-lg-6">
+				<h4>Is this a secure site for purchases?</h4>
+				<p>Absolutely! We work with Stripe which guarantees your safety and security. All site communication and data transfer are secured and
+					encrypted.</p>
+			</div>
+			<div class="col-lg-6">
+				<h4>Can I update my card details?</h4>
+				<p>Yes. Go to the billing section of your dashboard and update your payment information.</p>
+			</div>
+			<div class="col-lg-6">
+				<h4>How long are your contracts?</h4>
+				<p>Currently, we only offer monthly subscription. You can upgrade, downgrade, or cancel your monthly account at any time with no further
+					obligation. Yearly subscription with generous discount will become available soon.</p>
+			</div>
+			<div class="col-lg-6">
+				<h4>Why do you ask for several permissions in login?</h4>
+				<p>Envato API requires us to ask for these permissions to have the ability to get your details, items, purchased items, etc. on your behalf. We
+					take
+					privacy extremely seriously, and will never send messages, or access your data for anything other than our stated purposes.</p>
+			</div>
+			<div class="col-lg-6">
+				<h4>Are you affiliated with Envato?</h4>
+				<p>No, we are not affliated or supported by Envato.</p>
+			</div>
+			<div class="col-lg-6">
+				<h4>Can I get refund?</h4>
+				<p>Unfortunately, not at this time! Please try our free plan for a while to make sure Helpato is what you want.</p>
+			</div>
+		</div>
+	</div>
+</section>
+{% endcomment %}
+
+<section class="section section-dark">
+	<div class="container">
+		<h2 class="section-title">Changelog</h2>
+
+		{% for changelog in site.data.changelog %}
+		<div class="row mb-4">
+			<div class="col-md-3 text-md-right mb-2 mb-md-0">
+				<h4 class="m-0">v{{ changelog.version }}</h4>
+				<small class="text-muted">{{ changelog.date }}</small>
+			</div>
+			<div class="col">
+				<ul>
+					{% for change in changelog.changes %}
+					<li>{{ change }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>
