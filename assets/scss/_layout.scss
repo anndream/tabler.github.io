@@ -1,0 +1,85 @@
+.header {
+	padding: 2rem 0;
+}
+
+.footer {
+	border-top: 1px solid $border-light;
+	padding: 2rem 0;
+	margin-top: 3rem;
+	font-size: px2rem(14px);
+	color: $color-muted;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	font-size: px2rem(24px);
+	line-height: 2rem;
+	color: inherit;
+	transition: .3s opacity;
+
+	&:hover {
+		opacity: .8;
+		text-decoration: none;
+	}
+}
+
+.logo-image {
+	width: 2rem;
+	height: 2rem;
+	margin-right: .75rem;
+}
+
+.menu {
+	display: flex;
+	color: $color-muted;
+	font-size: px2rem(14px);
+
+	a {
+		color: inherit;
+		margin-left: 1.5rem;
+
+		&:hover {
+			color: $color-text;
+			text-decoration: none;
+		}
+	}
+}
+
+
+.welcome {
+	overflow: hidden;
+	text-align: center;
+	padding: 5rem 0 0;
+	position: relative;
+	background: linear-gradient(to bottom, #ffff, #eee);
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: url(../images/waves.svg) no-repeat bottom;
+		z-index: 100;
+		pointer-events: none;
+	}
+}
+
+.welcome-title {
+	font-size: px2rem(48px);
+	font-weight: 700;
+}
+
+.welcome-description {
+	font-size: px2rem(24px);
+	font-weight: 300;
+}
+
+.welcome-browser {
+	margin-top: 6rem;
+	box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, .1);
+	margin-bottom: -8rem;
+}
