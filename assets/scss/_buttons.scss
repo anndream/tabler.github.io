@@ -1,6 +1,6 @@
 .btn {
 	display: inline-block;
-	border-radius: 40px;
+	border-radius: 80px;
 	padding: 0 2rem;
 	font-weight: 700;
 	font-size: 1rem;
@@ -34,4 +34,11 @@
 		background: rgba(#fff, .08);
 		border-color: #fff;
 	}
+}
+
+.btn-small {
+	line-height: 2rem;
+	padding: 0 1rem;
+	font-size: px2rem(14px);
+	font-weight: 500;
 }
