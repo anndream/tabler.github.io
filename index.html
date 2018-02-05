@@ -1,22 +1,29 @@
 ---
 layout: default
+hide-header: true
 ---
 
 <section class="welcome">
-	<div class="container">
-		<h1 class="welcome-title">Tabler</h1>
-		<p class="welcome-description">Premium dashboard template with responsive and high quality UI. For Free!</p>
+	{% include header.html logo="white" %}
 
-		<div class="mt-6">
-			<a href="{{ site.github_url }}" class="btn" target="_blank">Download</a>
-			<a href="./demo" class="btn btn-outline ml-2">See demo</a>
+	<div class="container">
+		<div class="welcome-header">
+			<h1 class="welcome-title">Admin panel made simple</h1>
+			<p class="welcome-description">Premium dashboard template with responsive and high quality UI. For Free!</p>
+
+			<div class="mt-6">
+				<a href="{{ site.github_url }}" class="btn btn-green" target="_blank">Download</a>
+				<a href="./demo" class="btn btn-outline ml-2">See demo</a>
+			</div>
 		</div>
 
-		<div class="welcome-browser browser">
-			<div class="browser-topbar">
-				<span></span><span></span><span></span>
-			</div>
-			<img src="assets/images/dashboard.png" alt="" class="browser-image">
+
+		<div class="welcome-browser">
+			<svg width="966" height="565" viewbox="0 0 966 565" version="1.1"
+			     xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet">
+				<image xlink:href="assets/images/macbook.png" x="0" y="0" height="565" width="966"/>
+				<image xlink:href="assets/images/dashboard.png" x="117" y="28" height="458" width="730"/>
+			</svg>
 		</div>
 	</div>
 </section>
@@ -27,7 +34,6 @@ layout: default
 		<p class="section-description">
 			Tabler comes with tons of well-designed components and features.
 		</p>
-
 
 		<div class="row">
 			<div class="col-sm-6 col-lg-4">
