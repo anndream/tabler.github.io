@@ -4,9 +4,6 @@ description: Premium dashboard template with responsive and high quality UI. For
 port: 4001
 highlighter: rouge
 
-plugins:
-  - jekyll-tidy
-
 exclude:
 - gulpfile.js
 - package-lock.json
