@@ -6,16 +6,18 @@
 	<title>Tabler - Premium dashboard template with responsive and high quality UI. For Free!</title>
 	<meta name="description" content="{{ site.description }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900"/>
 
-	<link rel="stylesheet" href="assets/css/style.css">
-	<meta name="google-site-verification" content="BVFVRVpG6GoPMaAY6LsruG_pYia11RDrJGZtp0ITwA8" />
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<meta name="google-site-verification" content="BVFVRVpG6GoPMaAY6LsruG_pYia11RDrJGZtp0ITwA8"/>
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113467793-1"></script>
 	<script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-113467793-1');
@@ -25,5 +27,42 @@
 
 {{ content }}
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script>
+    $(document).ready(function () {
+        console.log('ok');
+        var devices = {
+            mobile: { width: 375, height: 667 },
+            tablet: { width: 768, height: 1024 },
+            desktop: { width: 1200, height: 800 },
+            tv: { width: 1600, height: 900 },
+        };
+
+        function changeDevice(deviceName) {
+			var device = devices[deviceName],
+				$links = $('.jQ_changeDevice[data-device]');
+
+            $links
+				.removeClass('active')
+				.filter('[data-device="' + deviceName +'"]').addClass('active');
+
+			$('.jQ_deviceWrapper')
+				.width(device.width)
+				.height(device.height);
+		}
+
+        $('.jQ_changeDevice').on('click', function(e){
+            var $this = $(this),
+				device = $this.attr('data-device');
+
+            changeDevice(device);
+
+            e.preventDefault();
+            return false;
+		});
+
+        changeDevice('tv');
+    });
+</script>
 </body>
 </html>
