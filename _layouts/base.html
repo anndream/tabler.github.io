@@ -3,21 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>{% if page.title %}{{ page.title }} - {% endif %}Tabler - Premium dashboard template with responsive and high quality UI. For Free!</title>
+	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 	<meta name="description" content="{{ site.description }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900"/>
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
 
-	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
 	<meta name="google-site-verification" content="BVFVRVpG6GoPMaAY6LsruG_pYia11RDrJGZtp0ITwA8"/>
 
 	<meta name="twitter:card" content="summary_large_image"/>
-	<meta name="twitter:url" content="{{ site.github.url }}"/>
-	<meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}Tabler - Premium dashboard template with responsive and high quality UI. For Free!"/>
-	<meta name="twitter:description" content="">
-	<meta name="twitter:image" content="{{ site.github.url }}/og.png"/>
+	<meta name="twitter:url" content="{{ site.url }}"/>
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}"/>
+	<meta name="twitter:description" content="{{ site.description }}">
+	<meta name="twitter:image" content="{{ site.url }}/og.png"/>
 
 	<meta name="twitter:image:width" content="600"/>
 	<meta name="twitter:image:height" content="315"/>
@@ -25,10 +25,10 @@
 	<meta name="twitter:creator" content="@codecalm"/>
 
 	<meta property="og:type" content="website"/>
-	<meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}Tabler - Premium dashboard template with responsive and high quality UI. For Free!"/>
-	<meta property="og:description" content=""/>
-	<meta property="og:url" content="{{ site.github.url }}"/>
-	<meta property="og:image" content="{{ site.github.url }}/og.png"/>
+	<meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}"/>
+	<meta property="og:description" content="{{ site.description }}"/>
+	<meta property="og:url" content="{{ site.url }}"/>
+	<meta property="og:image" content="{{ site.url }}/og.png"/>
 
 	<meta property="og:image:width" content="1200"/>
 	<meta property="og:image:height" content="630"/>
