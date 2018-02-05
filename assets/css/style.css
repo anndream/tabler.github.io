@@ -4005,19 +4005,24 @@ table th {
   display: flex;
 }
 
-.demo-toolbar a {
+.demo-toolbar-link {
+  padding: 0 1rem;
   min-width: 3rem;
   line-height: 3rem;
   text-align: center;
   color: rgba(255, 255, 255, 0.32);
-  font-size: 18px;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   transition: .3s background, .3s color;
 }
 
-.demo-toolbar a:hover, .demo-toolbar a.active {
+.demo-toolbar-link i {
+  font-size: 18px;
+}
+
+.demo-toolbar-link:hover, .demo-toolbar-link.active {
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
 }
 
 .demo-container {
@@ -4026,9 +4031,13 @@ table th {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: #585c62;
   text-align: center;
   overflow: auto;
+}
+
+.demo-container::-webkit-scrollbar {
+  display: none;
 }
 
 .demo-wrapper {
