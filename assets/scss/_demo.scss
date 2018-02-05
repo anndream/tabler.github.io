@@ -4,7 +4,7 @@
 
 .demo-toolbar {
 	height: 3rem;
-	background: #000;
+	background: #333;
 	display: flex;
 }
 
@@ -13,7 +13,7 @@
 	min-width: 3rem;
 	line-height: 3rem;
 	text-align: center;
-	color: rgba(#fff, .32);
+	color: rgba(#fff, .8);
 	border-right: 1px solid rgba(#fff, .1);
 	transition: .3s background, .3s color;
 
@@ -35,7 +35,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: #585c62;
+	background: linear-gradient(to right, #1488cc, #2b32b2);
 
 	text-align: center;
 	overflow: auto;
