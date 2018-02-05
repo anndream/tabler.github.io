@@ -14,5 +14,6 @@ exclude:
 
 
 
-github_url: https://github.com/tabler/tabler/releases
+github_url: https://github.com/tabler/tabler
+download_url: https://github.com/tabler/tabler/releases
 demo_url: https://tabler.github.io/tabler/
