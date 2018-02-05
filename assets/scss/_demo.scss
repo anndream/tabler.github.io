@@ -1,24 +1,35 @@
 .demo {
-
+	background: linear-gradient(to right, #1488cc, #2b32b2);
+	height: 100vh;
 }
 
 .demo-toolbar {
 	height: 3rem;
-	background: #333;
+	background: transparent;
 	display: flex;
+	font-weight: 500;
+	font-size: px2rem(14px);
+	position: fixed;
+	top: .5rem;
+	left: 0;
+	right: 0;
+	padding: 0 .5rem;
 }
 
 .demo-toolbar-link {
 	padding: 0 1rem;
 	min-width: 3rem;
-	line-height: 3rem;
+	height: 3rem;
 	text-align: center;
 	color: rgba(#fff, .8);
-	border-right: 1px solid rgba(#fff, .1);
 	transition: .3s background, .3s color;
+	display: inline-flex;
+	align-items: center;
+	border-radius: 3px;
 
-	i {
-		font-size: 18px;
+	svg {
+		width: 18px;
+		height: 18px;
 	}
 
 	&:hover,
@@ -31,11 +42,10 @@
 
 .demo-container {
 	position: fixed;
-	top: 3rem;
+	top: 4rem;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: linear-gradient(to right, #1488cc, #2b32b2);
 
 	text-align: center;
 	overflow: auto;
