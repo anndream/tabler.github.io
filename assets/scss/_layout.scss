@@ -13,6 +13,10 @@
 	padding: 2rem 0;
 	font-size: px2rem(14px);
 	color: $color-muted;
+
+	a {
+		color: $color-muted-dark;
+	}
 }
 
 .logo {
@@ -56,11 +60,18 @@
 	a {
 		color: inherit;
 		margin-left: 1.5rem;
+		display: flex;
+		align-items: center;
 
 		&:hover {
 			text-decoration: none;
 			opacity: .8;
 		}
+	}
+
+	svg {
+		width: 18px;
+		height: 18px;
 	}
 }
 
