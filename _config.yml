@@ -2,8 +2,10 @@ title: Tabler - Admin panel made simple
 description: Premium dashboard template with responsive and high quality UI. For Free!
 
 port: 4001
-
 highlighter: rouge
+
+plugins:
+  - jekyll-tidy
 
 exclude:
 - gulpfile.js
@@ -11,8 +13,6 @@ exclude:
 - package.json
 - node_modules
 - .idea/
-
-
 
 github_url: https://github.com/tabler/tabler
 download_url: https://github.com/tabler/tabler/releases
