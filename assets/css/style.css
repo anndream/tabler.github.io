@@ -306,12 +306,15 @@ body {
 
 .welcome-title {
   font-size: 3rem;
+  line-height: 1.1;
   font-weight: 700;
+  margin: 0 0 1rem;
 }
 
 .welcome-description {
   font-size: 1.5rem;
   font-weight: 300;
+  margin: 0;
 }
 
 .welcome-browser {
