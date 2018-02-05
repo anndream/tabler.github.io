@@ -202,11 +202,13 @@ body {
 }
 
 .header {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
+  color: #fff;
+  background: linear-gradient(to right, #1488cc, #2b32b2);
 }
 
 .welcome .header {
-  color: #fff;
+  background: transparent;
 }
 
 .footer {
@@ -240,7 +242,7 @@ body {
 }
 
 .logo-demo {
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
   font-weight: 500;
   font-size: 20px;
 }
@@ -272,9 +274,9 @@ body {
   text-align: center;
   position: relative;
   color: #fff;
-  background: linear-gradient(to right, #1488cc, #2b32b2);
   padding-bottom: 1px;
   margin-bottom: 8rem;
+  background: linear-gradient(to right, #1488cc, #2b32b2);
 }
 
 .welcome:before {
@@ -323,8 +325,8 @@ body {
 
 .container {
   width: 100%;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -355,8 +357,8 @@ body {
 
 .container-fluid {
   width: 100%;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -4023,7 +4025,7 @@ table th {
   min-width: 3rem;
   height: 3rem;
   text-align: center;
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
   transition: .3s background, .3s color;
   display: -webkit-inline-box;
   display: inline-flex;

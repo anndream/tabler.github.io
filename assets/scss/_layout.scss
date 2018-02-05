@@ -1,8 +1,10 @@
 .header {
-	padding: 2rem 0;
+	padding: 1.5rem 0;
+	color: #fff;
+	background: linear-gradient(to right, #1488cc, #2b32b2);
 
 	.welcome & {
-		color: #fff;
+		background: transparent;
 	}
 }
 
@@ -35,7 +37,7 @@
 }
 
 .logo-demo {
-	color: rgba(#fff, .8);
+	color: #fff;
 	font-weight: 500;
 	font-size: 20px;
 
@@ -66,9 +68,9 @@
 	text-align: center;
 	position: relative;
 	color: #fff;
-	background: linear-gradient(to right, #1488cc, #2b32b2);
 	padding-bottom: 1px;
 	margin-bottom: 8rem;
+	background: linear-gradient(to right, #1488cc, #2b32b2);
 
 	&:before {
 		content: '';
