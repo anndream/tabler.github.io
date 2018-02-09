@@ -1,7 +1,7 @@
 .header {
 	padding: 1.5rem 0;
 	color: #fff;
-	background: linear-gradient(to right, #1488cc, #2b32b2);
+	background: $background-gradient;
 
 	.welcome & {
 		background: transparent;
@@ -81,7 +81,7 @@
 	color: #fff;
 	padding-bottom: 1px;
 	margin-bottom: 8rem;
-	background: linear-gradient(to right, #1488cc, #2b32b2);
+	background: $background-gradient;
 
 	&:before {
 		content: '';
