@@ -215,11 +215,11 @@ body {
   border-top: 1px solid #eee;
   padding: 2rem 0;
   font-size: 0.875rem;
-  color: #777;
+  color: #8d96a7;
 }
 
 .footer a {
-  color: #555;
+  color: #656f83;
 }
 
 .logo {
@@ -3623,7 +3623,7 @@ body {
 }
 
 .text-muted {
-  color: #777 !important;
+  color: #8d96a7 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -3732,7 +3732,7 @@ table th {
 }
 
 .section {
-  padding: 3rem 0;
+  padding: 5rem 0;
 }
 
 .section-dark {
@@ -3748,9 +3748,21 @@ table th {
 
 .section-description {
   text-align: center;
-  color: #777;
+  color: #8d96a7;
   margin: -1.5rem auto 3rem;
   max-width: 40rem;
+}
+
+.section-action {
+  background: linear-gradient(to right, #1488cc, #2b32b2);
+  color: #fff;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.section-action .section-description {
+  color: #fff;
 }
 
 .highlight .hll {
