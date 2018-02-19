@@ -14,4 +14,3 @@ fabric.properties
 /node_modules/
 .DS_Store
 /commits.sh
-
