@@ -12,5 +12,5 @@ exclude:
 - .idea/
 
 github_url: https://github.com/tabler/tabler
-download_url: https://github.com/tabler/tabler/releases
-demo_url: https://dev.dashboard.codecalm.net
+download_url: https://github.com/tabler/tabler/archive/master.zip
+demo_url: https://codecalm.net/tabler/
